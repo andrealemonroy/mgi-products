@@ -1,5 +1,5 @@
-import type { Product, ProductPayload, ProductsListResponse } from '@models/products'
-import { http } from '@services/http'
+import type { Product, ProductPayload, ProductsListResponse } from '../types/products'
+import { http } from './http'
 
 export async function getProductsService() {
   return await http<ProductsListResponse>('/products')
